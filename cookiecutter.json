@@ -1,0 +1,19 @@
+{
+  "project_name": "My Project",
+  "project_slug": "{{ cookiecutter.project_name | lower | replace(' ', '_') | replace('-', '_') }}",
+  "project_description": "A Django + React web application",
+  "author_name": "Your Name",
+  "author_email": "you@example.com",
+  "python_version": "3.13",
+  "node_version": "22",
+  "_copy_without_render": [
+    "frontend/src/contexts/AuthContext.tsx",
+    "frontend/src/contexts/ThemeContext.tsx",
+    "frontend/src/components/ProtectedRoute/ProtectedRoute.tsx",
+    "frontend/src/pages/Login/LoginPage.tsx",
+    "frontend/src/setupTests.ts",
+    "frontend/src/types.ts",
+    "frontend/docker-entrypoint.sh",
+    "frontend/nginx.conf.template"
+  ]
+}
